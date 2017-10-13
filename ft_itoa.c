@@ -6,22 +6,33 @@
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 16:55:46 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/13 14:30:15 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/10/13 15:43:06 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static size_t	ft_stlen(int n)
+{
+	size_t	i;
+
+	i = 0;
+	while (n /= 10)
+		i++;
+	return (i);
+}
+
+char			*ft_itoa(int n)
 {
 	char				*str;
 	size_t				i;
 	unsigned int		j;
 
-	i = 4;
+	i = ft_stlen(n);
 	j = n;
 	if (n < 0)
 		j = -n;
+	i++;
 	str = malloc(sizeof(char) * i + 1);
 	if (str == NULL)
 		return (NULL);
