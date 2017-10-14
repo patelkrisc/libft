@@ -104,7 +104,7 @@ all: $(NAME)
 clean:
 	@echo "[Removing *.o files...]"
 	@$(DEL) $(OBJ)
-	@echo "[*.o file(s) removed!]"
+	@echo "[*.o files removed!]"
 
 fclean: clean
 	@echo "[Removing libft.a file]"
