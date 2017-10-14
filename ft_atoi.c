@@ -21,15 +21,13 @@ int		ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	n = 1;
-	while (str[i] == ' ' || str[i] == '\n'
-			|| str[i] == '\t' || str[i] == '\f'
-			|| str[i] == '\r' || str[i] == '\v')
+	while (ft_isspace(str[i]))
 		i++;
 	if (str[i] == '-')
 		n = -1;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-	while (str[i] != '\0' && (str[i] <= '9' && str[i] >= '0'))
+	while (str[i] != '\0' && ft_isdigit(str[i]))
 	{
 		res = (res * 10) + (str[i] - '0');
 		i++;
