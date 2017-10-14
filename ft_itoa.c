@@ -45,6 +45,6 @@ char			*ft_itoa(int n)
 		i--;
 	}
 	if (n < 0)
-		str[i] = '-';
+		str[0] = '-';
 	return (str);
 }
