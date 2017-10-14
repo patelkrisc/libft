@@ -6,15 +6,15 @@
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 16:55:46 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/13 23:42:16 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/10/13 23:52:54 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char	*ft_itoa(int n)
 {
-	char	*str;
+	char	str;
 	int		i;
 	int		neg;
 
@@ -29,11 +29,11 @@ char	*ft_itoa(int n)
 	}
 	while (n != 0)
 	{
-		str[i++] = (n % 10) + 48;
+		s[i++] = (n % 10) + 48;
 		n /= 10;
 	}
 	if (neg)
-		str[i++] = '-';
-	str[i] = '\0';
-	return (ft_strrev(str));
+		s[i++] = '-';
+	s[i] = '\0';
+	return (ft_strrev(s));
 }

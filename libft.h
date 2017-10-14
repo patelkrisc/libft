@@ -16,6 +16,9 @@
 # include <string.h>
 # include <unistd.h>
 
+# define I_MAX 2147483647
+# define I_MIN (- I_MAX - 1)
+
 typedef struct		s_list
 {
 	void			*content;
@@ -81,6 +84,7 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *big, const char *little, size_t n);
 char				*ft_strrchr(const char *s, int c);
+char				*ft_strrev(char *str);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(char *s1, char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
