@@ -1,5 +1,5 @@
 # libft
 
-This is my initial upload. ft_atoi and ft_itoa are not working at this time.
+*/ Small updates. ft_atoi and ft_itoa still need work. */
 
-10-13-17
+10-13-17 #2
