@@ -14,7 +14,7 @@
 
 int		ft_ishexnumber(int c)
 {
-	return ((c >= '0' && c <= '9')
-			|| (c >= 'A' && c <= 'F')
-			|| (c >= 'a' && c <= 'f'));
+	return ((ft_isdigit(c))
+			|| (c >= 'a' && c <= 'f')
+			|| (c >= 'A' && c <= 'F'));
 }
