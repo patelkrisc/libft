@@ -1,5 +1,5 @@
 # libft
 
-*/ Small updates. ft_itoa still need work. */
+Streamlined more, itoa almost done
 
-10-13-17 #3
+10-13-17 #4
