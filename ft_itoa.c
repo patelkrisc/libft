@@ -6,7 +6,7 @@
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 16:55:46 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/13 23:40:58 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/10/13 23:42:16 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_itoa(int n)
 	i = 0;
 	neg = 0;
 	if (n == 0)
-		s[i++] = '0';
+		str[i++] = '0';
 	if (n < 0)
 	{
 		n *= -1;
@@ -29,11 +29,11 @@ char	*ft_itoa(int n)
 	}
 	while (n != 0)
 	{
-		s[i++] = (n % 10) + 48;
+		str[i++] = (n % 10) + 48;
 		n /= 10;
 	}
 	if (neg)
-		s[i++] = '-';
-	s[i] = '\0';
-	return (ft_strrev(s));
+		str[i++] = '-';
+	str[i] = '\0';
+	return (ft_strrev(str));
 }
