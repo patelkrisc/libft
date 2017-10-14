@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
 #include "libft.h"
 
 static size_t	ft_stlen(int n)
@@ -27,13 +26,11 @@ char			*ft_itoa(int n)
 {
 	char				*str;
 	size_t				i;
-	unsigned int		j;
+	int					j;
 
 	i = ft_stlen(n);
 	j = n;
-	if (n == INT_MAX)
-		return (ft_strdup("2147483647"));
-	if (n == INT_MIN)
+	if (n == I_MIN)
 		return (ft_strdup("-2147483648"));
 	if (n < 0)
 		j = -n;
