@@ -37,12 +37,12 @@ int					ft_ispunct(int c);
 int					ft_isspace(int c);
 int					ft_isupper(int c);
 char				*ft_itoa(int n);
-t_list				*ft_lstnew(void const *content, size_t content_size);
-void				ft_lstdelone(t_list **alst, void(*del)(void *, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
+void				ft_lstdelone(t_list **alst, void(*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list				*ft_lstnew(void const *content, size_t content_size);
 void				*ft_memalloc(size_t size);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
@@ -85,7 +85,7 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(char *s1, char *s2);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
-int					ft_tolower(int	c);
-int					ft_toupper(int	c);
+int					ft_tolower(int c);
+int					ft_toupper(int c);
 
 #endif
