@@ -6,15 +6,15 @@
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/05 16:55:46 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/13 23:54:36 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/10/13 23:55:53 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_itoa(int n)
 {
-	char	str;
+	char	str[1024];
 	int		i;
 	int		neg;
 
