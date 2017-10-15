@@ -60,6 +60,8 @@ char		**ft_strsplit(char const *s, char c)
 	i = 0;
 	j = 0;
 	k = ft_cwords(s, c);
+	if (!s)
+		return (NULL);
 	if (!(str = (char **)malloc(sizeof(str) * (k + 2))))
 		return (NULL);
 	while (s[i] == c && s[i])

@@ -23,6 +23,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	l = ft_strlen(s);
 	n = ft_memalloc(l + 1);
+	if (n == NULL)
+		return (NULL);
 	while (*s)
 	{
 		n[i] = f(i, *s);

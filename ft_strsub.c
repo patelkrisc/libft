@@ -21,6 +21,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (NULL);
 	n = ft_memalloc(len + 1);
+	if (n == NULL)
+		return (NULL);
 	n = ft_strncpy(n, (s + start), len);
 	return (n);
 }

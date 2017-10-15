@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s)
 	size_t	j;
 
 	i = 0;
+	if (!s)
+		return (0);
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
 	if (s[i] == '\0')
