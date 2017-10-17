@@ -15,7 +15,7 @@
 char	*ft_strcat(char *s1, const char *s2)
 {
 	int	b;
-	int c;
+	int	c;
 
 	b = 0;
 	while (s1[b] != '\0')
