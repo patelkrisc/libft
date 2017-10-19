@@ -1,5 +1,5 @@
 # libft
 
-Streamlined more, itoa almost done
+Feature Complete 
 
-10-13-17 #4
+Submitted 10/17/17
