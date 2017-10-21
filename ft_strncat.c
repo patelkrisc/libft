@@ -14,7 +14,7 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	int		b;
+	size_t	b;
 	size_t	c;
 
 	b = 0;
