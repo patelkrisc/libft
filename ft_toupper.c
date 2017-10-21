@@ -6,7 +6,7 @@
 /*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 19:40:50 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/10 13:50:46 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/10/20 17:48:23 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 int		ft_toupper(int c)
 {
 	c = (ft_islower(c)) ? c - 32 : c;
-		return (c);
+	return (c);
 }
