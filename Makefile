@@ -93,7 +93,7 @@ DEL = rm -f
 CFLAGS = -Wall -Werror -Wextra
 
 $(NAME):
-	@echo "[Creating object files and libft.a file...]"
+	@echo "\033[32m[Creating object files and libft.a file...][0m"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
@@ -103,7 +103,7 @@ $(NAME):
 all: $(NAME)
 
 clean:
-	@echo "[Removing *.o files...]"
+	@echo "\033[31m[Removing *.o files...][0m"
 	@$(DEL) $(OBJ)
 	@echo "[*.o files removed!]"
 
