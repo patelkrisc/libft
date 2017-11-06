@@ -93,19 +93,19 @@ DEL = rm -f
 CFLAGS = -Wall -Werror -Wextra
 
 $(NAME):
-	@echo "\033[33m---Creating object files and libft.a file...---\033[0m"
+	@echo "\033[32m---Creating object files and libft.a file...---\033[0m"
 	@$(CC) $(CFLAGS) -c $(SRC) -I $(HDR)
 	@$(AR) $(NAME) $(OBJ)
 	@$(RL) $(NAME)
-	@echo "\033[33m---Object files created!---\033[0m"
-	@echo "\033[33m---libft.a created!---\033[0m"
+	@echo "\033[32m---Object files created!---\033[0m"
+	@echo "\033[32m---libft.a created!---\033[0m"
 
 all: $(NAME)
 
 clean:
-	@echo "\033[31m---Removing *.o files...---\033[0m"
+	@echo "\033[33m---Removing *.o files...---\033[0m"
 	@$(DEL) $(OBJ)
-	@echo "\033[31m---*.o files removed!---\033[0m"
+	@echo "\033[33m---*.o files removed!---\033[0m"
 
 fclean: clean
 	@echo "\033[31m---Removing libft.a file---\033[0m"
