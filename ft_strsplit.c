@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpatel <patelkrisc@gmail.com>              +#+  +:+       +#+        */
+/*   By: kpatel <kpatel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 16:49:15 by kpatel            #+#    #+#             */
-/*   Updated: 2017/10/10 17:55:46 by kpatel           ###   ########.fr       */
+/*   Updated: 2017/11/15 22:33:13 by kpatel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ char		**ft_strsplit(char const *s, char c)
 	j = 0;
 	k = ft_cwords(s, c);
 	if (!s)
+		return (NULL);
+	if (!c)
 		return (NULL);
 	if (!(str = (char **)malloc(sizeof(str) * (k + 2))))
 		return (NULL);
